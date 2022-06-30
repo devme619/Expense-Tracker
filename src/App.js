@@ -1,6 +1,7 @@
 
 import React from 'react';
 import ExpenseBox from './components/Expenses/ExpenseBox';
+import ExpenseForm from './components/NewExpense/ExpenseForm';
 function App() {
   const expenses = [
     {
@@ -21,6 +22,7 @@ function App() {
   ];
   return (
     <div>
+      <ExpenseForm/>
       <ExpenseBox item={expenses}/>
     </div>
   );
